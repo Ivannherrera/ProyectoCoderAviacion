@@ -1,0 +1,552 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(34, 34, 80);
+}
+
+button:hover {
+    background-color: rgb(22, 22, 53);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: rgb(151, 146, 67);
+}
+
+header {
+    background-color: rgb(246, 246, 246);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(151, 146, 67);
+    font-size: 2em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linea {
+    border-bottom: 1px solid rgb(0, 0,0);
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(34, 34, 80);
+}
+
+#fondo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#fondo h1 {
+    color: white;
+}
+
+#Sobre-nosotros .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Experiencia-golden {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#Experiencia-golden .container {
+    padding: 150px 12px;
+}
+
+#Experiencia-golden h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Experiencia-golden p {
+    display: none;
+}
+
+#Experiencia-golden .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/experiencia-golden3.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/fbo3.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/sanitario-avion-2.jpg");
+}
+
+
+
+#nuestros-jets {
+    background-color: rgb(245, 245, 245);
+    color: rgb(245, 245, 245);
+    text-align: center;
+}
+
+#nuestros-jets .container {
+    padding: 150px 12px;
+}
+
+#nuestros-jets h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-jets p {
+    display: none;
+}
+
+#nuestros-jets .cartas {
+    background-position: center center;
+    background-size: cover;
+    padding: 200px 0px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.cartas:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/gulf.jpg");
+}
+
+.cartas:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/lear60.jpg");
+}
+
+.cartas:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/Phenom.jpg");
+}
+
+
+
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li {
+    margin: 20px 0px;
+    font-weight: bold
+}
+
+footer p {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(3, 0, 0);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*Sobre-nosotros*/
+
+#nosotros {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+
+.img-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url("../images/nosotros.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+
+#img-nosotros h1 {
+    color: white;
+}
+
+#nosotros {
+    text-align: center;
+    justify-content: center;
+    padding: 200px 12px;
+}
+
+/*NUESTROS JETS*/
+
+#jets {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.img-gulf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url("../images/gulf.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+
+.img-lear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url("../images/lear60.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+
+.img-emb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url("../images/Phenom.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+
+#img-jets h1 {
+    color: white;
+}
+
+#jets {
+    text-align: center;
+    justify-content: center;
+    padding: 200px 12px;
+}
+
+
+/*SERVICIOS*/
+
+#Servicioos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#Servicioos .container {
+    padding: 150px 12px;
+}
+
+#Servicioos h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Servicios p {
+    display: none;
+}
+
+#Servicioos .cart {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.cart:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/experiencia-golden3.jpg");
+}
+
+.cart:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/fbo3.jpg");
+}
+
+.cart:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../images/sanitario-avion-2.jpg");
+}
+
+/*EXPERIENCIA GOLDEN*/
+
+#jets {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.img-exp1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url("../images/nosotros5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+
+
+
+.img-exp2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url("../images/fbo3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+
+#img-jets h1 {
+    color: white;
+}
+
+#jets {
+    text-align: center;
+    justify-content: center;
+    padding: 200px 12px;
+}
+
+/*CONTACTO*/
+
+.img-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url("../images/fbo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+
+#contact {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+#contact .texto {
+    text-align: center ;
+    padding: 20px 12px;
+}
+
+
+
+@media (min-width: 720px){
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #fondo h1 {
+        font-size: 5em;
+    }
+
+    #Sobre-nosotros .container {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #Sobre-nosotros .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Sobre-nosotros h2 {
+        margin-top: 0px;
+    }
+
+
+    #Sobre-nosotros .img-container {
+        background-image: url("../images/experiencia-golden2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #Experiencia-golden .servicios {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Experiencia-golden p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Experiencia-golden h3 {
+        margin-top: 0;
+    }
+
+    #Experiencia-golden .carta {
+        padding: 15px;
+    }
+
+    #caracteristicas {
+        background-image: url("../images/contacto.png");
+        background-repeat: no-repeat;
+        background-size: 26rem;
+        background-position: right;
+
+    }
+
+    #caracteristicas .container {
+        text-align: right;
+    }
+
+    #caracteristicas li {
+        width: 50%;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+}
