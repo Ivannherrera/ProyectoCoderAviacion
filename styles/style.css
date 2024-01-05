@@ -284,9 +284,21 @@ footer .container {
 #jets {
     background-color: rgb(30, 30, 30);
     color: white;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 200px 12px;
+}
+.jets-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
 }
 
-.img-gulf{
+/* .img-gulf{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -297,9 +309,9 @@ footer .container {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-}
+} */
 
-.img-lear{
+/* .img-lear{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,9 +322,9 @@ footer .container {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-}
+} */
 
-.img-emb{
+/* .img-emb{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,18 +335,11 @@ footer .container {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-}
+} */
 
 #img-jets h1 {
     color: white;
 }
-
-#jets {
-    text-align: center;
-    justify-content: center;
-    padding: 200px 12px;
-}
-
 
 /*SERVICIOS*/
 
@@ -549,4 +554,13 @@ footer .container {
     #caracteristicas {
         background-position-x: calc(100vw - 800px);
     }
+}
+
+@media (width<=750px) {
+    .jets-contenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 0 25%;
+            }
 }
