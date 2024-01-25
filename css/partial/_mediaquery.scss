@@ -1,4 +1,9 @@
 @media (min-width: 720px) {
+
+    .logo {
+        margin-top: 10px;
+    }
+    
     #fondo h1 {
         font-size: 5em;
     }
@@ -79,7 +84,7 @@
     }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
     .label_hamburguesa {
         display: none;
     }
