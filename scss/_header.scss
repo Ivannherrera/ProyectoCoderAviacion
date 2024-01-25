@@ -6,6 +6,8 @@ ul {
     list-style: none;
 }
 .header {
+    position: relative;
+    z-index: 3;
     height: var(--altura_header);
     background-color: var(--color_primario);
 }

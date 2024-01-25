@@ -83,6 +83,8 @@ ul {
 }
 
 .header {
+  position: relative;
+  z-index: 3;
   height: var(--altura_header);
   background-color: var(--color_primario);
 }
@@ -267,7 +269,7 @@ body {
   margin-bottom: 50px;
   display: flex;
   margin-top: 10px;
-  margin-left: 50px;
+  margin-left: 280px;
 }
 
 .animate__animated.animate__slideInDown {
@@ -368,7 +370,14 @@ body {
   height: 95vh;
 }
 
+.carousel-inner {
+  position: relative;
+  z-index: 1;
+}
+
 .carousel-inner img {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -528,6 +537,12 @@ footer .containerfooter p {
     justify-content: center;
     align-content: center;
     padding: 0 25%;
+  }
+  #fondo > h1 {
+    display: none !important;
+  }
+  .preciodolar {
+    margin-left: 15px;
   }
 }
 @media (min-width: 768px) {
