@@ -1,0 +1,101 @@
+@media (min-width: 720px) {
+    #fondo h1 {
+        font-size: 5em;
+    }
+
+    #Sobre-nosotros .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Sobre-nosotros .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Sobre-nosotros h2 {
+        margin-top: 0px;
+    }
+
+    #Sobre-nosotros .img-container {
+        background-image: url("../images/experiencia-golden2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #Experiencia-golden .servicios {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Experiencia-golden p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Experiencia-golden h3 {
+        margin-top: 0;
+    }
+
+    #Experiencia-golden .carta {
+        padding: 15px;
+    }
+
+    #caracteristicas {
+        background-image: url("../images/contacto.png");
+        background-repeat: no-repeat;
+        background-size: 26rem;
+        background-position: right;
+    }
+
+    #caracteristicas li {
+        width: 50%;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+@media (width<=750px) {
+    .jets-contenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 0 25%;
+    }
+}
+
+@media (min-width: 720px) {
+    .label_hamburguesa {
+        display: none;
+    }
+    .ul_links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link {
+        font-size: 1.2rem;
+        transition: all 0.3s;
+        padding: 0.2rem 0.7rem;
+    }
+    .link:hover {
+        background-color: #000000;
+    }
+}

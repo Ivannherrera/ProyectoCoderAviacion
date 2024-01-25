@@ -10,22 +10,48 @@
 </head>
 
 <body>
-    <header class="linea">
-        <div class="container">
-            <a href="../index.html"><p class="logo">GOLDEN FLY</p></a>
-            <nav>
-                <ul>
-                    <a href="../index.html">Inicio</a>
+    <header class="header">
+        <nav class="navbar">
+            <li><a href="../index.html">
+                    <h2 class="logo">GOLDEN FLY</h2>
+                </a></li>
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links">
                     <a href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="li_links">
                     <a href="../pages/experiencia.html">Experiencia GoldenFly</a>
+                </li>
+                <li class="li_links">
                     <a href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="li_links">
                     <a href="../pages/nuestros-jets.html">Nuestros Jets</a>
+                </li>
+                <li class="li_links">
                     <a href="../pages/contacto.html">Contacto</a>
-                </ul>
-            </nav>
-        </div>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section class="register">
+            <h4>Registro</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
+            <p>Tenga en cuenta que al enviar sus datos, usted sera contactado a la brevedad.</p>
+            <input class="botons" type="submit" value="Enviar">
+        </section>
         <section id="contact">
             <div class="img-contact"></div>
             <div class="texto">
@@ -35,11 +61,11 @@
                     volar con cada milla recorrida.
                 </p>
             </div>
-
+        </section>
         </section>
     </main>
     <footer>
-        <div class="container">
+        <div class="containerfooter">
             <p>&copy; Todos los derechos reservados. GoldenFly</p>
         </div>
     </footer>

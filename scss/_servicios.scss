@@ -1,0 +1,33 @@
+#Servicioos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    h2 {
+        margin-top: 0;
+        font-size: 3.2em;
+        p {
+            display: none;
+        }
+    }
+    .container {
+        padding: 50px 12px;
+    }
+    .cart {
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    .cart:first-child {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../images/experiencia-golden3.jpg");
+    }
+    .cart:nth-child(2) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fbo3.jpg");
+    }
+    .cart:nth-child(3) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../images/sanitario-avion-2.jpg");
+    }
+}

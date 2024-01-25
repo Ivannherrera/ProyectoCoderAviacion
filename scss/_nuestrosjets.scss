@@ -1,0 +1,29 @@
+#jets {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.slide {
+    margin-top: 10px;
+}
+.slide img {
+    height: 95vh;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    box-shadow: none;
+}
+button:hover {
+    @extend .carousel-control-next
+}

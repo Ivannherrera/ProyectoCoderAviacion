@@ -1,0 +1,19 @@
+#nosotros {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 12px;
+    .img-nosotros {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+        color: white;
+        background-image: url("../images/nosotros.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoldenFly</title>
     <link rel="icon page" href="images/icono.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -13,94 +14,115 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
 
-    <head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <li><a href="index.html">
+                    <h2 class="logo">GOLDEN FLY</h2>
+                </a></li>
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="li_links">
+                    <a href="../pages/experiencia.html">Experiencia GoldenFly</a>
+                </li>
+                <li class="li_links">
+                    <a href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="li_links">
+                    <a href="../pages/nuestros-jets.html">Nuestros Jets</a>
+                </li>
+                <li class="li_links">
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="fondo">
+            <h1 class="animate__animated animate__slideInDown">MÁS QUE VOLAR</h1>
+            <button>SELECCIONA TU DESTINO</button>
+        </section>
 
-    <body>
-        <header class="linea">
-            <div class="container">
-                <a href="index.html">
-                    <p class="logo">GOLDEN FLY</p>
-                </a>
-                <nav>
-                    <a href="index.html">Inicio</a>
-                    <a href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
-                    <a href="./pages/experiencia.html">Experiencia GoldenFly</a>
-                    <a href="./pages/servicios.html">Servicios</a>
-                    <a href="./pages/nuestros-jets.html">Nuestros Jets</a>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section id="fondo">
-                <h1>MÁS QUE VOLAR</h1>
-                <button>SELECCIONA TU DESTINO</button>
-            </section>
+        <section id="Sobre-nosotros">
+            <div class="containeruno">
+                <div class="img-container"></div>
+                <div class="texto">
 
-            <section id="Sobre-nosotros">
-                <div class="containeruno">
-                    <div class="img-container"></div>
-                    <div class="texto">
-
-                        <h2>Sobre <span class="color-acento">Nosotros</span></h2>
-                        <p>En GoldenFly estamos siempre en busqueda de elevar los estandares mas altos de la aviación.
-                            Nuestra filosofia de trabajo marca un enfazis inquebrantable sobre la calidad del servicio,
-                            el mantenimiento de nuestras aeronaves, y el soporte al cliente.
-                        <div></div>
-                        Únete a la familia GOLDENFLY y contágiate de nuestra pasión por volar con cada milla recorrida.
-                        </p>
-                    </div>
+                    <h2>Sobre <span class="color-acento">Nosotros</span></h2>
+                    <p>En GoldenFly estamos siempre en busqueda de elevar los estandares mas altos de la aviación.
+                        Nuestra filosofia de trabajo marca un enfazis inquebrantable sobre la calidad del servicio,
+                        el mantenimiento de nuestras aeronaves, y el soporte al cliente.
+                    <div></div>
+                    Únete a la familia GOLDENFLY y contágiate de nuestra pasión por volar con cada milla recorrida.
+                    </p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="Experiencia-golden">
-                <div class="container">
-                    <h2>EXPERIENCIA<span class="color-acento"> GOLDEN</span></h2>
-                    <div class="container">
-                        <h2>Nuestros Servicios</h2>
-                        <section id="Servicios"></section>
-                        <div class="servicios">
-                            <div class="carta">
-                                <h3>Servicio Charter</h3>
-                                <a href="./pages/servicios.html"><button class="btn btn-primary" type="submit">+
-                                        INFO</button></a>
-                            </div>
-                            <div class="carta">
-                                <h3>Servicio Exclusivo FBO</h3>
-                                <a href="./pages/servicios.html"><button class="btn btn-primary" type="submit">+
-                                        INFO</button></a>
-                            </div>
-                            <div class="carta">
-                                <h3>Vuelos Sanitarios</h3>
-                                <a href="./pages/servicios.html"><button class="btn btn-primary" type="submit">+
-                                        INFO</button></a>
-                            </div>
+        <section id="Experiencia-golden">
+            <div class="containerdos">
+                <h2>EXPERIENCIA<span class="color-acento"> GOLDEN</span></h2>
+                <div class="containerdos">
+                    <h2>Nuestros Servicios</h2>
+                    <section id="Servicios"></section>
+                    <div class="servicios">
+                        <div class="carta">
+                            <h3>Servicio Charter</h3>
+                            <a href="./pages/servicios.html"><button class="btn btn-primary" type="submit">+
+                                    INFO</button></a>
+                        </div>
+                        <div class="carta">
+                            <h3>Servicio Exclusivo FBO</h3>
+                            <a href="./pages/servicios.html"><button class="btn btn-primary" type="submit">+
+                                    INFO</button></a>
+                        </div>
+                        <div class="carta">
+                            <h3>Vuelos Sanitarios</h3>
+                            <a href="./pages/servicios.html"><button class="btn btn-primary" type="submit">+
+                                    INFO</button></a>
                         </div>
                     </div>
-            </section>
+                </div>
+        </section>
 
-            <section id="nuestros-jets">
-                <div class="cartas">
-                    <a href="./pages/nuestros-jets.html"><button class="btn btn-primary" type="submit">Nuestros
-                            Jets</button></a>
-                </div>
-            </section>
+        <section id="nuestros-jets">
+            <div class="cartas">
+                <a href="./pages/nuestros-jets.html"><button class="btn btn-primary" type="submit">Nuestros
+                        Jets</button></a>
+            </div>
+        </section>
 
-            <section id="caracteristicas">
-                <div class="container">
-                    <ul>
-                        <li>✔️ Soporte 24/7 </li>
-                        <li>​✔️ Servicio FBO VIP</li>
-                        <li>✔️​​ Volamos a todo el mundo</li>
-                    </ul>
-                </div>
-            </section>
-            <footer>
-                <div class="container">
-                    <p>&copy; Todos los derechos reservados. GoldenFly</p>
-                </div>
-        </main>
-        </footer>
-    </body>
+        <section id="caracteristicas">
+            <div class="container">
+                <ul>
+                    <li>✔️ Soporte 24/7 </li>
+                    <li>​✔️ Servicio FBO VIP</li>
+                    <li>✔️​​ Volamos a todo el mundo</li>
+                </ul>
+            </div>
+            <div class="preciodolar"><iframe src="https://dolarhoy.com/i/cotizaciones/dolar-blue"
+                    frameborder="0"></iframe>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="containerfooter">
+            <p>&copy; Todos los derechos reservados. GoldenFly</p>
+        </div>
+
+    </footer>
+</body>
 
 </html>

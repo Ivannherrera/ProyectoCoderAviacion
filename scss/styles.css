@@ -1,11 +1,9 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 button:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(22, 22, 53);
 }
 
 header {
@@ -53,7 +51,7 @@ button {
   border: 2px solid rgba(0, 0, 0, 0);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   color: white;
-  background-color: black;
+  background-color: rgb(34, 34, 80);
 }
 
 header nav {
@@ -67,93 +65,29 @@ header a {
   padding: 5px 12px;
   text-decoration: none;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: black;
 }
+
 header a a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(34, 34, 80);
 }
 
-a {
-  text-decoration: none;
+.linea {
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-ol,
-ul {
-  list-style: none;
-}
-
-.header {
-  height: var(--altura_header);
-  background-color: var(--color_primario);
-}
-
-.navbar {
-  height: 100%;
-  display: flex;
-  width: min(1200px, 100%);
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  padding: 0 var(--padding_left_right);
-}
-
-.menu_hamburguesa {
-  display: none;
-}
-
-.menu_hamburguesa:checked + .ul_links {
-  height: calc(100vh - var(--altura_header));
-}
-
-.logo {
-  color: var(--color_blanco);
-}
-
-.list_icon {
-  color: var(--color_blanco);
-  cursor: pointer;
-}
-
-.ul_links {
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  top: var(--altura_header);
-  left: 0;
-  height: 0;
-  overflow: hidden;
+.linea header .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 3rem;
-  transition: all 0.3s;
 }
 
-.li_links {
-  background-color: black;
-}
-
-.link {
-  font-size: 3.5em;
-  color: var(--color_blanco);
+.linea header .logo {
+  margin: 0;
+  padding: 25px 30px;
   font-weight: bold;
-}
-
-:root {
-  --color_primario: rgb(0, 0, 0);
-  --color_primario_suave: #ffffff;
-  --color_blanco: #fff;
-  --altura_header: 80px;
-  --padding_left_right: 2rem;
-  --ancho_maximo: 1200px;
-}
-
-body {
-  background-color: #ffffff;
-  font-family: "Roboto", sans-serif, "helvetica", "Arial Narrow Bold", "system-ui", "Segoe UI", "Open Sans", "Helvetica Neue";
+  color: rgb(151, 146, 67);
+  font-size: 2em;
 }
 
 #fondo {
@@ -181,6 +115,7 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
 #Sobre-nosotros .containeruno .img-container {
   background-image: url("../images/experiencia-golden2.jpg");
   background-size: cover;
@@ -188,6 +123,7 @@ body {
   height: 500px;
   width: 400px;
 }
+
 #Sobre-nosotros .containeruno .texto {
   width: 50%;
   max-width: 600px;
@@ -212,10 +148,12 @@ body {
   color: white;
   text-align: center;
 }
+
 #Experiencia-golden .containerdos {
   padding: 100px 12px;
   margin-top: 0;
 }
+
 #Experiencia-golden .carta {
   background-position: center center;
   background-size: cover;
@@ -223,12 +161,15 @@ body {
   margin: 20px;
   border-radius: 15px;
 }
+
 #Experiencia-golden .carta:first-child {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/experiencia-golden3.jpg");
 }
+
 #Experiencia-golden .carta:nth-child(2) {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fbo3.jpg");
 }
+
 #Experiencia-golden .carta:nth-child(3) {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sanitario-avion-2.jpg");
 }
@@ -238,9 +179,11 @@ body {
   color: rgb(245, 245, 245);
   text-align: center;
 }
+
 #nuestros-jets .container {
   padding: 150px 12px;
 }
+
 #nuestros-jets .cartas {
   background-position: center center;
   background-size: cover;
@@ -248,6 +191,7 @@ body {
   margin: 20px;
   border-radius: 15px;
 }
+
 #nuestros-jets .cartas:first-child {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cockpitg800.jpg");
 }
@@ -271,12 +215,23 @@ body {
   border: 1px solid #bcbcbc;
   margin-bottom: 50px;
   display: flex;
-  margin-top: 100px;
-  margin-left: 50px;
 }
 
-.animate__animated.animate__slideInDown {
-  --animate-duration: 3s;
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer .containerfooter {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .containerfooter p {
+  margin: 0;
+  padding: 4px;
+  color: rgb(3, 0, 0);
 }
 
 #nosotros {
@@ -284,8 +239,9 @@ body {
   color: white;
   text-align: center;
   justify-content: center;
-  padding: 50px 12px;
+  padding: 150px 12px;
 }
+
 #nosotros .img-nosotros {
   display: flex;
   align-items: center;
@@ -330,16 +286,20 @@ body {
   color: white;
   text-align: center;
 }
+
 #Servicioos h2 {
   margin-top: 0;
   font-size: 3.2em;
 }
+
 #Servicioos h2 p {
   display: none;
 }
+
 #Servicioos .container {
-  padding: 50px 12px;
+  padding: 150px 12px;
 }
+
 #Servicioos .cart {
   background-position: center center;
   background-size: cover;
@@ -347,12 +307,15 @@ body {
   margin: 20px;
   border-radius: 15px;
 }
+
 #Servicioos .cart:first-child {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/experiencia-golden3.jpg");
 }
+
 #Servicioos .cart:nth-child(2) {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fbo3.jpg");
 }
+
 #Servicioos .cart:nth-child(3) {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sanitario-avion-2.jpg");
 }
@@ -376,15 +339,19 @@ body {
 .carousel-inner img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   filter: brightness(0.8);
 }
 
 .carousel-control-prev,
-.carousel-control-next,
-button:hover {
+.carousel-control-next {
   background-color: transparent;
   box-shadow: none;
+}
+
+button:hover {
+  background-color: transparent;
 }
 
 #contact {
@@ -392,86 +359,51 @@ button:hover {
   color: white;
 }
 
-.register {
-  width: 400px;
-  background: rgb(0, 0, 0);
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif, "helvetica", "Arial Narrow Bold", "system-ui", "Segoe UI", "Open Sans", "Helvetica Neue";
-  color: white;
-  box-shadow: 7px 13px 37px #000;
-}
-
-.register h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.controls {
-  width: 100%;
-  background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #ffffff;
-  font-family: "helvetica";
-  font-size: 18px;
-  color: white;
-}
-
-.register p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.register a {
-  color: white;
-  text-decoration: none;
-}
-
-.register .botons {
-  width: 100%;
-  background: #343d50;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-}
-
 #contact .texto {
-  background-color: black;
   text-align: center;
   padding: 20px 12px;
-  margin-top: 100px;
 }
 
-footer {
-  background-color: rgb(230, 230, 230);
-}
-footer .containerfooter {
-  height: 100px;
+.img-contact {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-footer .containerfooter p {
-  margin: 0;
-  padding: 4px;
-  color: rgb(3, 0, 0);
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: url("../images/fbo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 @media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
   #fondo h1 {
     font-size: 5em;
   }
+
   #Sobre-nosotros .container {
     display: flex;
     justify-content: space-evenly;
   }
+
   #Sobre-nosotros .texto {
     width: 50%;
     max-width: 600px;
@@ -481,9 +413,11 @@ footer .containerfooter p {
     flex-direction: column;
     justify-content: center;
   }
+
   #Sobre-nosotros h2 {
     margin-top: 0px;
   }
+
   #Sobre-nosotros .img-container {
     background-image: url("../images/experiencia-golden2.jpg");
     background-size: cover;
@@ -491,26 +425,32 @@ footer .containerfooter p {
     height: 500px;
     width: 400px;
   }
+
   #Experiencia-golden .servicios {
     display: flex;
     justify-content: center;
   }
+
   #Experiencia-golden p {
     display: block;
     margin-bottom: 30px;
   }
+
   #Experiencia-golden h3 {
     margin-top: 0;
   }
+
   #Experiencia-golden .carta {
     padding: 15px;
   }
+
   #caracteristicas {
     background-image: url("../images/contacto.png");
     background-repeat: no-repeat;
     background-size: 26rem;
     background-position: right;
   }
+
   #caracteristicas li {
     width: 50%;
     text-align: initial;
@@ -519,37 +459,19 @@ footer .containerfooter p {
     justify-content: center;
   }
 }
+
 @media (min-width: 1200px) {
   #caracteristicas {
     background-position-x: calc(100vw - 800px);
   }
 }
-@media (width <= 750px) {
+
+@media (width <=750px) {
   .jets-contenedor {
     flex-direction: column;
     justify-content: center;
     align-content: center;
     padding: 0 25%;
-  }
-}
-@media (min-width: 720px) {
-  .label_hamburguesa {
-    display: none;
-  }
-  .ul_links {
-    position: static;
-    width: auto;
-    height: auto;
-    flex-direction: row;
-    gap: 2rem;
-  }
-  .link {
-    font-size: 1.2rem;
-    transition: all 0.3s;
-    padding: 0.2rem 0.7rem;
-  }
-  .link:hover {
-    background-color: #000000;
   }
 }
 
